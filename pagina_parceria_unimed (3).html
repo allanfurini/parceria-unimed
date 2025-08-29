@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parceria CEIPC + Unimed Rondonópolis & Hospital Mário Perrone</title>
+  <style>
+    body {font-family: Arial, sans-serif;margin: 0;background-color: #f0f4f8;color: #333}
+    header {background-color: #1e3a8a;color: white;padding: 2rem 1rem;text-align: center}
+    section {max-width: 980px;margin: 2rem auto;padding: 1rem;background-color: white;border-radius: 8px;box-shadow: 0 0 10px rgba(0,0,0,.1)}
+    h2 {color: #1e3a8a}
+    ul {padding-left: 1.5rem}
+    .tabela {width: 100%;border-collapse: collapse;margin-top: 1rem}
+    .tabela th,.tabela td {border: 1px solid #ccc;padding: .5rem;text-align: left}
+    footer {background-color: #1e3a8a;color: white;text-align: center;padding: 1rem;margin-top: 3rem}
+    .cta{display:inline-block;margin-top:1rem;background:#10b981;color:#fff;padding:.75rem 1.25rem;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(16,185,129,.35)}
+    .cta:hover{transform:translateY(-2px)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:1rem;background:linear-gradient(180deg,#ffffff,#f9fbff)}
+    .compare h3{margin-bottom:.25rem}
+    .kpi{font-size:1.6rem;font-weight:800;color:#1e3a8a}
+    .note{font-size:.9rem;color:#555}
+    .legend{display:flex;gap:1rem;align-items:center;margin:.5rem 0}
+    .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+    .dot.ceipc{background:#1e3a8a}
+    .dot.outras{background:#0ea5e9}
+    .bars{display:grid;grid-template-columns:1fr;gap:.75rem}
+    .bar{display:flex;align-items:center;gap:.5rem}
+    .bar label{width:170px;font-weight:700}
+    .bar .track{flex:1;height:16px;background:#e5e7eb;border-radius:999px;position:relative}
+    .bar .fill{position:absolute;left:0;top:0;height:100%;border-radius:999px}
+    .fill.ceipc{background:#1e3a8a}
+    .fill.outras{background:#0ea5e9;opacity:.8}
+    /* Accordions */
+    .accordion{margin-top:1.5rem}
+    .acc-item{border:1px solid #e5e7eb;border-radius:12px;margin:.75rem 0;overflow:hidden;background:#fff}
+    .acc-btn{width:100%;text-align:left;padding:1rem 1rem 1rem 3rem;font-size:1rem;border:0;background:#f8fafc;cursor:pointer;position:relative;font-weight:700}
+    .acc-btn::before{content:"+";position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-weight:900;color:#1e3a8a}
+    .acc-btn.active{background:#eef2ff}
+    .acc-btn.active::before{content:"–"}
+    .acc-content{display:none;padding:1rem;border-top:1px solid #e5e7eb}
+    .grid-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .pill{display:inline-block;background:#ecfeff;color:#0ea5e9;border:1px solid #bae6fd;padding:.25rem .5rem;border-radius:999px;font-size:.85rem;margin:.15rem}
+    .button-group{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .gallery img{width:100%;border-radius:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Parceria Especial CEIPC + Unimed Rondonópolis & Hospital Mário Perrone</h1>
+    <p>Desconto exclusivo de <strong>R$ 200,00</strong> para colaboradores com <strong>desconto em folha</strong></p>
+    <a class="cta" href="https://wa.me/5566996651296?text=Quero%20o%20benef%C3%ADcio%20Unimed%20na%20mensalidade" target="_blank" rel="noopener">Quero garantir meu benefício</a>
+  </header>
+
+  <section>
+    <h2>O que nossa escola oferece</h2>
+    <ul>
+      <li>Desconto de R$ 200,00 na mensalidade com pagamento via desconto em folha.</li>
+      <li>Localização estratégica: trajeto direto entre hospital e escola.</li>
+      <li>Ensino de qualidade com aulas de inglês, coral, natação e cubo mágico.</li>
+      <li>Educação Infantil, Fundamental I e II com opção de período integral.</li>
+      <li>Almoço incluso para alunos em tempo integral.</li>
+    </ul>
+    <p class="note">*Disponibilidade varia conforme etapa/série e grade: alguns itens são ofertados a turmas específicas (ex.: natação, cubo mágico a partir do 3º ano).*</p>
+
+    <h2>Tabela de valores com desconto</h2>
+    <table class="tabela">
+      <thead>
+        <tr><th>Série</th><th>Mensalidade Regular</th><th>Com Desconto Unimed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Educação Infantil</td><td>R$ 800,00</td><td>R$ 600,00</td></tr>
+        <tr><td>Fundamental I</td><td>R$ 850,00</td><td>R$ 650,00</td></tr>
+        <tr><td>Fundamental II</td><td>R$ 880,00</td><td>R$ 680,00</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Valores — Período Integral</h2>
+    <table class="tabela">
+      <thead>
+        <tr><th>Etapa</th><th>Integral (Regular)</th><th>Integral com Convênio Unimed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Educação Infantil (Integral)</td><td>R$ 1.550,00</td><td><strong>R$ 1.350,00</strong> <span class="note">(–R$ 200,00)</span></td></tr>
+        <tr><td>Fundamental (Integral)</td><td>R$ 1.700,00</td><td><strong>R$ 1.500,00</strong> <span class="note">(–R$ 200,00)</span></td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Importante:</strong> o desconto está condicionado ao convênio com a Unimed e é aplicado diretamente na folha de pagamento dos colaboradores.</p>
+  
+    <div class="cards">
+      <div class="card compare">
+        <h2>Comparativo de Mercado (Rondonópolis)</h2>
+        <p class="note">Baseado em valores públicos listados em plataformas de educação na cidade (faixas 2025). Sem citar nomes: representamos como <em>"outras escolas da cidade"</em>. O objetivo é dar referência de preço para decisão rápida.</p>
+        <div class="legend"><span class="dot ceipc"></span> CEIPC com convênio Unimed <span class="dot outras"></span> Outras escolas (médias/"a partir de")</div>
+        <div class="bars">
+          <div class="bar"><label>Educação Infantil</label><div class="track"><div class="fill outras" style="width:60%"></div><div class="fill ceipc" style="width:33%"></div></div></div>
+          <div class="bar"><label>Fundamental I</label><div class="track"><div class="fill outras" style="width:70%"></div><div class="fill ceipc" style="width:36%"></div></div></div>
+          <div class="bar"><label>Fundamental II</label><div class="track"><div class="fill outras" style="width:92%"></div><div class="fill ceipc" style="width:38%"></div></div></div>
+        </div>
+        <h3 style="margin-top:1rem">Tabela rápida</h3>
+        <table class="tabela">
+          <thead><tr><th>Etapa</th><th>CEIPC com convênio</th><th>Outras escolas (faixa observada)</th></tr></thead>
+          <tbody>
+            <tr><td>Educação Infantil</td><td><strong>R$ 600,00</strong></td><td>de <em>R$ 430,10</em> (com bolsa) a <em>~R$ 1.014+</em> (cheio)</td></tr>
+            <tr><td>Fundamental I</td><td><strong>R$ 650,00</strong></td><td>~R$ 1.014 a R$ 1.511 (cheio)</td></tr>
+            <tr><td>Fundamental II</td><td><strong>R$ 680,00</strong></td><td>a partir de ~R$ 1.656 (cheio)</td></tr>
+          </tbody>
+        </table>
+        
+        <h3 style="margin-top:1rem">Integral (com e sem convênio)</h3>
+        <div class="bars">
+          <div class="bar"><label>Infantil Integral</label>
+            <div class="track">
+              <div class="fill outras" style="width:91%"></div><!-- 1550/1700 -->
+              <div class="fill ceipc" style="width:79%"></div><!-- 1350/1700 -->
+            </div>
+          </div>
+          <div class="bar"><label>Fundamental Integral</label>
+            <div class="track">
+              <div class="fill outras" style="width:100%"></div><!-- 1700/1700 -->
+              <div class="fill ceipc" style="width:88%"></div><!-- 1500/1700 -->
+            </div>
+          </div>
+        </div>
+
+        <p class="note">Observações: preços variam por série, turno e eventuais bolsas. Convênio Unimed Rondonópolis/Hospital aplica R$ 200,00 de desconto via folha.</p>
+      </div>
+
+      <div class="card">
+        <h2>Por que escolher o CEIPC?</h2>
+        <p class="kpi">Economia anual de até <span style="white-space:nowrap">R$ 2.400,00</span></p>
+        <ul>
+          <li>Desconto automático em folha, sem burocracia.</li>
+          <li>Trajeto prático: escola no caminho de ida e volta do hospital.</li>
+          <li>Integral com almoço incluso e plantão de tarefas.</li>
+          <li>Inglês, natação, coral e curso de cubo mágico.</li>
+          <li>Ambiente acolhedor e seguro para sua família.</li>
+        </ul>
+        <a class="cta" href="https://wa.me/5566996651296?text=Quero%20conhecer%20a%20parceria%20CEIPC%20%2B%20Unimed" target="_blank" rel="noopener">Falar agora no WhatsApp</a>
+      </div>
+    </div>
+
+    <section class="extras">
+      <h2>Diferenciais CEIPC (clique para explorar)</h2>
+      <div class="accordion">
+        <div class="acc-item">
+          <button class="acc-btn">Projeto de Empreendedorismo Sapiens</button>
+          <div class="acc-content">
+            <p>Nosso programa gamificado de educação financeira. A cada tarefa concluída, o aluno recebe <strong>$A (Sapiens)</strong> — nossa moeda escolar — que cai na conta dele como se fosse um PIX interno. Pais acompanham <strong>em tempo real</strong> o histórico de atividades e ganhos.</p>
+            <p>A cada bimestre realizamos a <strong>Feira Sapiens</strong>: os alunos compram e vendem produtos (lanches, artesanatos etc.), participam de <em>leilões de brinquedos</em> e aprendem na prática sobre preço, troco, poupança e negociação.</p>
+            <div><span class="pill">Educação Financeira</span><span class="pill">Protagonismo</span><span class="pill">Matemática viva</span></div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Projeto Mensal (científico, cultural ou artístico)</button>
+          <div class="acc-content">
+            <p>Todo mês um tema guia atividades integradas (BNCC): investigação, produção e apresentação. Ao final, as turmas socializam resultados em mostras e rodas de conversa. As crianças também desenvolvem projetos artísticos que são expostos no <strong>Museu da Escola</strong>, onde suas próprias criações ficam em destaque.</p>
+            <div><span class="pill">BNCC</span><span class="pill">Mão na massa</span><span class="pill">Aprendizagem ativa</span><span class="pill">Museu escolar</span></div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Aulas de campo bimestrais</button>
+          <div class="acc-content">
+            <p>Expedições pedagógicas a museus, cinema, Corpo de Bombeiros, cais, horto, <strong>praças da cidade</strong> e locais históricos — para conectar currículo à vida real.</p>
+            <div><span class="pill">Cultura local</span><span class="pill">Cidadania</span><span class="pill">Experiência</span></div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Projeto Família & Escola</button>
+          <div class="acc-content">
+            <p>Convidamos familiares para compartilhar profissões e vivências com as turmas. Já recebemos padeiros (oficina de pão), policiais, profissionais da saúde e muito mais.</p>
+            <div><span class="pill">Comunidade</span><span class="pill">Propósito</span><span class="pill">Oficinas práticas</span></div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Estrutura esportiva e artística</button>
+          <div class="acc-content">
+            <div class="grid-cols">
+              <div>
+                <h3>Água</h3>
+                <ul>
+                  <li>3 piscinas no campus (várias profundidades)</li>
+                  <li>+ 1 piscina semiolímpica no Centro Poliesportivo</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Esporte & Arte</h3>
+                <ul>
+                  <li>Quadra poliesportiva coberta</li>
+                  <li>Salão de dança</li>
+                  <li>Teatro em luz negra (apresentações)</li>
+                  <li><strong>CEIPC é Patrocinador Oficial do Rondon Cube</strong> — campeonato de cubo mágico regulamentado pela World Cube Association. Oportunidade para nossos alunos serem <em>atletas reconhecidos mundialmente</em> no esporte cubo mágico.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-cols" style="margin-top:1rem">
+              <div>
+                <h3>Ambientes & Conforto</h3>
+                <ul>
+                  <li><strong>Auditório grande, inclinado</strong> (teatro, cinema e palestras)</li>
+                  <li><strong>Climatização completa</strong>: ar condicionado em todas as salas e ambientes</li>
+                  <li>Muitas plantas e <em>samambaias</em>, criando um ambiente acolhedor</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Maternal</h3>
+                <ul>
+                  <li><strong>Camas para descanso</strong> das crianças do período integral (manhã e/ou tarde)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Parque Infantil (Jd. I, Jd. II e Pré)</button>
+          <div class="acc-content">
+            <ul>
+              <li>Piscina de bolinhas, cama elástica, escorregador, pista de obstáculos</li>
+              <li>Ambiente lúdico e seguro para o desenvolvimento motor</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Laboratório, Biblioteca, Casa na Árvore e Refeitório</button>
+          <div class="acc-content">
+            <ul>
+              <li>Laboratório de Ciências equipado</li>
+              <li>Biblioteca com acervo infantil e infantojuvenil</li>
+              <li>Casa na árvore (convivência e imaginação)</li>
+              <li>Refeitório amplo e acolhedor</li>
+              <li><strong>Museu da Escola</strong>: projetos artísticos autorais dos alunos expostos permanentemente</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Eventos inesquecíveis</button>
+          <div class="acc-content">
+            <ul>
+              <li><strong>Festa do Dia das Mães</strong> com jantar especial</li>
+              <li><strong>Gincana do Dia dos Pais</strong>: animada e divertida</li>
+              <li><strong>Noite do Pijama</strong>: gincanas, <em>cinema</em>, brinquedos e show de mágica</li>
+              <li>Feira Científica e Cultural</li>
+              <li>Mostras artísticas e apresentações temáticas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">Transparência pedagógica para as famílias</button>
+          <div class="acc-content">
+            <ul>
+              <li><strong>Plano de aula semanal</strong> disponível online para os pais</li>
+              <li><strong>Vídeos semanais</strong> dos projetos e atividades enviados <strong>todas as sextas-feiras</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h2>Muito além do valor financeiro</h2>
+        <p>No CEIPC seu filho vive a escola por inteiro — aprende finanças na prática, conecta-se com a cidade, experimenta ciência e arte, e cresce em um ambiente seguro, acolhedor e cheio de propósito. Com o convênio <strong>Unimed Rondonópolis/Hospital</strong>, a decisão fica simples: <em>educação integral com investimento inteligente</em>.</p>
+        <div class="button-group">
+          <a class="cta" href="https://wa.me/5566996651296?text=Quero%20agendar%20uma%20visita%20ao%20CEIPC" target="_blank" rel="noopener">Agendar visita guiada</a>
+          <a class="cta" href="https://www.google.com/maps/search/?api=1&query=Centro+de+Educa%C3%A7%C3%A3o+Integrado+Pedacinho+do+C%C3%A9u+Rondon%C3%B3polis" target="_blank" rel="noopener">📍 Ver CEIPC no Google Maps</a>
+          <a class="cta" href="https://www.google.com/maps/search/?api=1&query=Centro+Poliesportivo+CEIPC+Rondon%C3%B3polis" target="_blank" rel="noopener">📍 Ver Centro Poliesportivo no Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" style="margin-top:1rem">
+      
+
+      <div class="card gallery">
+        <h2>Galeria CEIPC</h2>
+        <p class="note">Coloque as fotos na pasta <code>fotos/</code> do repositório com estes nomes para carregar automaticamente.</p>
+        <div class="grid-cols">
+          <img src="fotos/ceipc-01.jpg" alt="Brincadeiras no parque infantil">
+          <img src="fotos/ceipc-02.jpg" alt="Biblioteca e leitura">
+          <img src="fotos/ceipc-03.jpg" alt="Laboratório de Ciências em atividade">
+          <img src="fotos/ceipc-04.jpg" alt="Esportes na quadra coberta">
+          <img src="fotos/ceipc-05.jpg" alt="Projetos científicos">
+          <img src="fotos/ceipc-06.jpg" alt="Visita guiada ao CEIPC">
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Accordions simples
+      document.querySelectorAll('.acc-btn').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          btn.classList.toggle('active');
+          const panel = btn.nextElementSibling;
+          panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
+  </section>
+
+  <footer>
+    <p>Centro de Educação Integrado Pedacinho do Céu - CEIPC<br>Contato: (66) 9 9665-1296</p>
+  </footer>
+</body>
+</html>
