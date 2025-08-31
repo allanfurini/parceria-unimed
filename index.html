@@ -20,7 +20,9 @@
     h2 {color: var(--azul)}
     ul {padding-left: 1.25rem}
     .tabela {width: 100%; border-collapse: collapse; margin-top: 1rem}
-    .tabela th,.tabela td {border: 1px solid #ccc; padding: .5rem; text-align: left}
+    .tabela th,.tabela td {border:1px solid #ccc; padding:.5rem;}
+.tabela th, .tabela td:first-child {text-align:left}
+.tabela td:nth-child(2), .tabela td:nth-child(3) {text-align:right}
     footer {background-color: var(--azul); color: white; text-align: center; padding: 1rem; margin-top: 3rem}
     .cta{display:inline-block; margin-top:1rem; background:var(--verde); color:#fff; padding:.75rem 1.25rem; border-radius:999px; text-decoration:none; font-weight:700}
     .cta:hover{filter:brightness(0.95); transform: translateY(-1px)}
@@ -120,7 +122,17 @@
         <tr><td>Fundamental II</td><td>R$ 880,00</td><td>R$ 680,00</td></tr>
       </tbody>
     </table>
-  </section>
+<h2>Valores — Período Integral</h2>
+<table class="tabela">
+  <thead>
+    <tr><th>Etapa</th><th>Integral (Regular)</th><th>Integral com Convênio Unimed</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Educação Infantil (Integral)</td><td>R$ 1.550,00</td><td>R$ 1.350,00</td></tr>
+    <tr><td>Fundamental (Integral)</td><td>R$ 1.700,00</td><td>R$ 1.500,00</td></tr>
+  </tbody>
+</table>
+</section>
 
   <!-- Resumo + Comparativos -->
   <section>
