@@ -38,6 +38,22 @@
     .button-group{display:flex; flex-wrap:wrap; gap:.5rem}
     .button-group .cta{margin-top:0}
 
+/* ===== Destaque do valor de economia ===== */
+.kpi{
+  font-size:1.6rem;        /* maior */
+  font-weight:900;         /* bem forte */
+  color:var(--azul);       /* cor principal */
+  line-height:1.1;
+  margin:.25rem 0 .75rem;
+}
+.kpi .num{
+  white-space:nowrap;      /* não quebra o número */
+  font-size:2rem;          /* ainda maior no valor */
+  background:#eef2ff;      /* leve realce de fundo */
+  padding:.1rem .35rem;
+  border-radius:6px;
+}
+
     /* ===== Barras com valores dentro ===== */
     .bars{display:grid; grid-template-columns:1fr; gap:.75rem}
     .bar{display:flex; align-items:center; gap:.5rem}
@@ -157,7 +173,7 @@
 
         <div class="card">
         <h2>Por que escolher o CEIPC?</h2>
-        <p class="kpi">Economia anual de até <span style="white-space:nowrap">R$ 2.400,00</span></p>
+        <p class="kpi">Economia anual de até <span class="num">R$ 2.400,00</span></p>
         <ul>
           <li>Desconto automático em folha, sem burocracia.</li>
           <li>Trajeto prático: escola no caminho de ida e volta do hospital.</li>
