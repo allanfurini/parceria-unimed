@@ -32,6 +32,7 @@
     }
     .card{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:1rem}
     .card h3{margin-top:0}
+    .card + .card{margin-top:1rem} /* espaço entre cards irmãos */
     .legend{display:flex; align-items:center; gap:1rem; margin:.5rem 0}
     .legend .dot{width:14px; height:14px; border-radius:50%}
     .dot.ceipc{background:var(--azul)}
@@ -134,74 +135,74 @@
 </table>
 </section>
 
-  <!-- Resumo + Comparativos -->
+  <!-- Resumo + Comparativos (cards separados) -->
   <section>
+    <!-- Card 1: Resumo -->
     <div class="card">
       <h2>Resumo da Parceria</h2>
       <p>Condições especiais para colaboradores vinculados à Unimed Rondonópolis / Hospital Mário Perrone, com desconto direto em folha. A parceria contempla Educação Infantil, Ensino Fundamental e opções de período integral no CEIPC.</p>
       <p class="note"><strong>Observação:</strong> o desconto está condicionado ao convênio com a Unimed e é aplicado diretamente na folha de pagamento dos colaboradores.</p>
-  
-      <div class="cards">
-        <div class="card compare">
-          <h2>Comparativo de Mercado (Rondonópolis)</h2>
-          <div class="legend"><span class="dot ceipc"></span> CEIPC <span class="dot outras"></span> Outras escolas (médias/"a partir de")</div>
+    </div>
 
-          <!-- Barras: Outras = 100% e CEIPC proporcional, com valor exibido -->
-          <div class="bars">
-            <div class="bar"><label>Educação Infantil</label>
-              <div class="track">
-                <div class="fill outras" style="width:100%">R$ 1.000</div>
-                <div class="fill ceipc"  style="width:60%">R$ 600</div>
-              </div>
-            </div>
-            <div class="bar"><label>Fundamental I</label>
-              <div class="track">
-                <div class="fill outras" style="width:100%">R$ 1.200</div>
-                <div class="fill ceipc"  style="width:54%">R$ 650</div>
-              </div>
-            </div>
-            <div class="bar"><label>Fundamental II</label>
-              <div class="track">
-                <div class="fill outras" style="width:100%">R$ 1.656</div>
-                <div class="fill ceipc"  style="width:41%">R$ 680</div>
-              </div>
-            </div>
+    <!-- Card 2: Comparativo de Mercado (tela cheia) -->
+    <div class="card compare">
+      <h2>Comparativo de Mercado (Rondonópolis)</h2>
+      <div class="legend"><span class="dot ceipc"></span> CEIPC <span class="dot outras"></span> Outras escolas (médias/"a partir de")</div>
+
+      <!-- Barras: Outras = 100% e CEIPC proporcional, com valor exibido -->
+      <div class="bars">
+        <div class="bar"><label>Educação Infantil</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.000</div>
+            <div class="fill ceipc"  style="width:60%">R$ 600</div>
           </div>
-
-          <h3 style="margin-top:1rem">Integral </h3>
-          <div class="bars">
-            <div class="bar"><label>Infantil Integral</label>
-              <div class="track">
-                <div class="fill outras" style="width:100%">R$ 1.700</div>
-                <div class="fill ceipc"  style="width:87%">R$ 1.350</div>
-              </div>
-            </div>
-            <div class="bar"><label>Fundamental Integral</label>
-              <div class="track">
-                <div class="fill outras" style="width:100%">R$ 1.950</div>
-                <div class="fill ceipc"  style="width:88%">R$ 1.500</div>
-              </div>
-            </div>
+        </div>
+        <div class="bar"><label>Fundamental I</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.200</div>
+            <div class="fill ceipc"  style="width:54%">R$ 650</div>
+          </div>
+        </div>
+        <div class="bar"><label>Fundamental II</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.656</div>
+            <div class="fill ceipc"  style="width:41%">R$ 680</div>
           </div>
         </div>
       </div>
 
-      <!-- Agora este card vem DEPOIS do gráfico, ocupando a largura toda -->
-      <div class="card">
-        <h2>Por que escolher o CEIPC?</h2>
-        <p class="kpi">Economia anual de até <span class="num">R$ 2.400,00</span></p>
-        <ul>
-          <li>Desconto automático em folha, sem burocracia.</li>
-          <li>Trajeto prático: escola no caminho de ida e volta do hospital.</li>
-          <li>Centro Poliesportivo CEIPC com atividades físicas e recreativas.</li>
-          <li>Integral com almoço incluso e plantão de tarefas.</li>
-          <li>Inglês, natação, coral e curso de cubo mágico.</li>
-          <li>Ambiente acolhedor e seguro para sua família.</li>
-        </ul>
-      </div>
+      <h3 style="margin-top:1rem">Integral</h3>
+      <div class="bars">
+        <div class="bar"><label>Infantil Integral</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.700</div>
+            <div class="fill ceipc"  style="width:87%">R$ 1.350</div>
+          </div>
+        </div>
+        <div class="bar"><label>Fundamental Integral</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.950</div>
+            <div class="fill ceipc"  style="width:88%">R$ 1.500</div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Card 3: Por que escolher (card próprio, separado) -->
+    <div class="card">
+      <h2>Por que escolher o CEIPC?</h2>
+      <p class="kpi">Economia anual de até <span class="num">R$ 2.400,00</span></p>
+      <ul>
+        <li>Desconto automático em folha, sem burocracia.</li>
+        <li>Trajeto prático: escola no caminho de ida e volta do hospital.</li>
+        <li>Centro Poliesportivo CEIPC com atividades físicas e recreativas.</li>
+        <li>Integral com almoço incluso e plantão de tarefas.</li>
+        <li>Inglês, natação, coral e curso de cubo mágico.</li>
+        <li>Ambiente acolhedor e seguro para sua família.</li>
+      </ul>
+    </div>
   </section>
+
 
   <!-- Extras: Acordeão -->
   <section class="extras">
