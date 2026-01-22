@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Parceria CEIPC + Unimed Rondonópolis & Hospital Mário Perrone</title>
   <style>
     :root{
@@ -21,8 +22,8 @@
     ul {padding-left: 1.25rem}
     .tabela {width: 100%; border-collapse: collapse; margin-top: 1rem}
     .tabela th,.tabela td {border:1px solid #ccc; padding:.5rem;}
-.tabela th, .tabela td:first-child {text-align:left}
-.tabela td:nth-child(2), .tabela td:nth-child(3) {text-align:right}
+    .tabela th, .tabela td:first-child {text-align:left}
+    .tabela td:nth-child(2), .tabela td:nth-child(3) {text-align:right}
     footer {background-color: var(--azul); color: white; text-align: center; padding: 1rem; margin-top: 3rem}
     .cta{display:inline-block; margin-top:1rem; background:var(--verde); color:#fff; padding:.75rem 1.25rem; border-radius:999px; text-decoration:none; font-weight:700}
     .cta:hover{filter:brightness(0.95); transform: translateY(-1px)}
@@ -41,21 +42,21 @@
     .button-group{display:flex; flex-wrap:wrap; gap:.5rem}
     .button-group .cta{margin-top:0}
 
-/* ===== Destaque do valor de economia ===== */
-.kpi{
-  font-size:1.6rem;        /* maior */
-  font-weight:900;         /* bem forte */
-  color:var(--azul);       /* cor principal */
-  line-height:1.1;
-  margin:.25rem 0 .75rem;
-}
-.kpi .num{
-  white-space:nowrap;      /* não quebra o número */
-  font-size:2rem;          /* destaque no tamanho */
-  background:transparent;  /* sem grifo */
-  padding:0;               /* sem “faixinha” */
-  border-radius:0;
-}
+    /* ===== Destaque do valor de economia ===== */
+    .kpi{
+      font-size:1.6rem;        /* maior */
+      font-weight:900;         /* bem forte */
+      color:var(--azul);       /* cor principal */
+      line-height:1.1;
+      margin:.25rem 0 .75rem;
+    }
+    .kpi .num{
+      white-space:nowrap;      /* não quebra o número */
+      font-size:2rem;          /* destaque no tamanho */
+      background:transparent;  /* sem grifo */
+      padding:0;               /* sem “faixinha” */
+      border-radius:0;
+    }
 
     /* ===== Barras com valores dentro ===== */
     .bars{display:grid; grid-template-columns:1fr; gap:.75rem}
@@ -97,15 +98,15 @@
 
   <!-- Banner de benefício -->
   <section>
-    <p>Desconto exclusivo de <strong>R$ 200,00</strong> para colaboradores com <strong>desconto em folha</strong>.</p>
+    <p>Desconto exclusivo de <strong>R$ 300,00</strong> para colaboradores com <strong>desconto em folha</strong>.</p>
     <a class="cta" href="https://wa.me/5566996651296?text=Quero%20o%20benef%C3%ADcio%20Unimed%20na%20mensalidade" target="_blank" rel="noopener">Quero garantir meu benefício</a>
   </section>
 
   <!-- Ofertas da escola -->
- <section>
+  <section>
     <h2>O que nossa escola oferece</h2>
     <ul>
-      <li>Desconto de R$ 200,00 na mensalidade com pagamento via desconto em folha.</li>
+      <li>Desconto de R$ 300,00 na mensalidade com pagamento via desconto em folha.</li>
       <li>Localização estratégica: trajeto direto entre hospital e escola.</li>
       <li>Ensino de qualidade com aulas de inglês, coral, natação e cubo mágico.</li>
       <li>Educação Infantil, Fundamental I e II com opção de período integral.</li>
@@ -118,22 +119,23 @@
         <tr><th>Série</th><th>Mensalidade Regular</th><th>Com Desconto</th></tr>
       </thead>
       <tbody>
-        <tr><td>Educação Infantil</td><td>R$ 800,00</td><td>R$ 600,00</td></tr>
-        <tr><td>Fundamental I</td><td>R$ 850,00</td><td>R$ 650,00</td></tr>
-        <tr><td>Fundamental II</td><td>R$ 880,00</td><td>R$ 680,00</td></tr>
+        <tr><td>Educação Infantil</td><td>R$ 800,00</td><td>R$ 500,00</td></tr>
+        <tr><td>Fundamental I</td><td>R$ 850,00</td><td>R$ 550,00</td></tr>
+        <tr><td>Fundamental II</td><td>R$ 880,00</td><td>R$ 580,00</td></tr>
       </tbody>
     </table>
-<h2>Valores — Período Integral</h2>
-<table class="tabela">
-  <thead>
-    <tr><th>Etapa</th><th>Integral (Regular)</th><th>Integral Com Desconto</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Educação Infantil (Integral)</td><td>R$ 1.550,00</td><td>R$ 1.350,00</td></tr>
-    <tr><td>Fundamental (Integral)</td><td>R$ 1.700,00</td><td>R$ 1.500,00</td></tr>
-  </tbody>
-</table>
-</section>
+
+    <h2>Valores — Período Integral</h2>
+    <table class="tabela">
+      <thead>
+        <tr><th>Etapa</th><th>Integral (Regular)</th><th>Integral Com Desconto</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Educação Infantil (Integral)</td><td>R$ 1.550,00</td><td>R$ 1.250,00</td></tr>
+        <tr><td>Fundamental (Integral)</td><td>R$ 1.700,00</td><td>R$ 1.400,00</td></tr>
+      </tbody>
+    </table>
+  </section>
 
   <!-- Resumo + Comparativos (cards separados) -->
   <section>
@@ -153,45 +155,46 @@
         <div class="bar"><label>Educação Infantil</label>
           <div class="track">
             <div class="fill outras" style="width:100%">R$ 1.000</div>
-            <div class="fill ceipc"  style="width:60%">R$ 600</div>
+            <div class="fill ceipc"  style="width:50%">R$ 500</div>
           </div>
         </div>
         <div class="bar"><label>Fundamental I</label>
           <div class="track">
             <div class="fill outras" style="width:100%">R$ 1.200</div>
-            <div class="fill ceipc"  style="width:54%">R$ 650</div>
+            <div class="fill ceipc"  style="width:45.8%">R$ 550</div>
           </div>
         </div>
         <div class="bar"><label>Fundamental II</label>
           <div class="track">
             <div class="fill outras" style="width:100%">R$ 1.656</div>
-            <div class="fill ceipc"  style="width:41%">R$ 680</div>
+            <div class="fill ceipc"  style="width:35%">R$ 580</div>
           </div>
         </div>
       </div>
 
-     <h3 style="margin-top:1rem">Integral</h3>
-<div class="bars">
-  <div class="bar"><label>Infantil Integral</label>
-    <div class="track">
-      <div class="fill outras" style="width:100%">R$ 1.700</div>
-      <div class="fill ceipc"  style="width:79.4%">R$ 1.350</div>
+      <h3 style="margin-top:1rem">Integral</h3>
+      <div class="bars">
+        <div class="bar"><label>Infantil Integral</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.700</div>
+            <div class="fill ceipc"  style="width:73.5%">R$ 1.250</div>
+          </div>
+        </div>
+        <div class="bar"><label>Fundamental Integral</label>
+          <div class="track">
+            <div class="fill outras" style="width:100%">R$ 1.950</div>
+            <div class="fill ceipc"  style="width:71.8%">R$ 1.400</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="bar"><label>Fundamental Integral</label>
-    <div class="track">
-      <div class="fill outras" style="width:100%">R$ 1.950</div>
-      <div class="fill ceipc"  style="width:76.9%">R$ 1.500</div>
-    </div>
-  </div>
- </div>
-</section>
+  </section>
 
-    <!-- Card 3: Por que escolher (card próprio, separado) -->
-<section>  
-  <div class="card">
+  <!-- Card 3: Por que escolher (card próprio, separado) -->
+  <section>
+    <div class="card">
       <h2>Por que escolher o CEIPC?</h2>
-      <p class="kpi">Economia anual de até <span class="num">R$ 2.400,00</span></p>
+      <p class="kpi">Economia anual de até <span class="num">R$ 3.600,00</span></p>
       <ul>
         <li>Desconto automático em folha, sem burocracia.</li>
         <li>Trajeto prático: escola no caminho de ida e volta do hospital.</li>
@@ -203,166 +206,165 @@
     </div>
   </section>
 
-
   <!-- Extras: Acordeão -->
   <section class="extras">
     <h2>Diferenciais CEIPC (clique para explorar)</h2>
-   <div class="accordion" id="acc">
-  <!-- 1. PROJETO SAPIENS -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Projeto de Empreendedorismo Sapiens
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <p>Nosso programa gamificado de educação financeira. A cada tarefa concluída, o aluno recebe $A (Sapiens) — nossa moeda escolar — que cai na conta dele como se fosse um PIX interno. Pais acompanham em tempo real o histórico de atividades e ganhos.</p>
-      <p>A cada bimestre realizamos a Feira Sapiens: os alunos compram e vendem produtos, participam de leilões de brinquedos e aprendem na prática sobre preço, troco, poupança e negociação.</p>
-      <div><span class="pill">Educação Financeira</span><span class="pill">Protagonismo</span><span class="pill">Matemática viva</span></div>
-    </div>
-  </div>
-
-  <!-- 2. PROJETO MENSAL -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Projeto Mensal (científico, cultural ou artístico)
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <p>Todo mês um tema guia atividades integradas (BNCC): investigação, produção e apresentação. As turmas socializam resultados em mostras e rodas de conversa. As crianças também desenvolvem projetos artísticos que são expostos no Museu da Escola.</p>
-      <div><span class="pill">BNCC</span><span class="pill">Mão na massa</span><span class="pill">Aprendizagem ativa</span><span class="pill">Museu escolar</span></div>
-    </div>
-  </div>
-
-  <!-- 3. AULAS DE CAMPO -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Aulas de campo bimestrais
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <p>Expedições pedagógicas a museus, cinema, Corpo de Bombeiros, cais, horto, praças da cidade e locais históricos — para conectar currículo à vida real.</p>
-      <div><span class="pill">Cultura local</span><span class="pill">Cidadania</span><span class="pill">Experiência</span></div>
-    </div>
-  </div>
-
-  <!-- 4. FAMÍLIA & ESCOLA -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Projeto Família &amp; Escola
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <p>Convidamos familiares para compartilhar profissões e vivências com as turmas. Já recebemos padeiros (oficina de pão), policiais, profissionais da saúde e muito mais.</p>
-      <div><span class="pill">Comunidade</span><span class="pill">Propósito</span><span class="pill">Oficinas práticas</span></div>
-    </div>
-  </div>
-
-  <!-- 5. ESTRUTURA -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Estrutura esportiva e artística
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <div class="grid-cols">
-        <div>
-          <h3>Água</h3>
-          <ul>
-            <li>3 piscinas no campus (várias profundidades)</li>
-            <li>+ 1 piscina semiolímpica no Centro Poliesportivo</li>
-          </ul>
+    <div class="accordion" id="acc">
+      <!-- 1. PROJETO SAPIENS -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Projeto de Empreendedorismo Sapiens
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <p>Nosso programa gamificado de educação financeira. A cada tarefa concluída, o aluno recebe $A (Sapiens) — nossa moeda escolar — que cai na conta dele como se fosse um PIX interno. Pais acompanham em tempo real o histórico de atividades e ganhos.</p>
+          <p>A cada bimestre realizamos a Feira Sapiens: os alunos compram e vendem produtos, participam de leilões de brinquedos e aprendem na prática sobre preço, troco, poupança e negociação.</p>
+          <div><span class="pill">Educação Financeira</span><span class="pill">Protagonismo</span><span class="pill">Matemática viva</span></div>
         </div>
-        <div>
-          <h3>Esporte &amp; Arte</h3>
+      </div>
+
+      <!-- 2. PROJETO MENSAL -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Projeto Mensal (científico, cultural ou artístico)
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <p>Todo mês um tema guia atividades integradas (BNCC): investigação, produção e apresentação. As turmas socializam resultados em mostras e rodas de conversa. As crianças também desenvolvem projetos artísticos que são expostos no Museu da Escola.</p>
+          <div><span class="pill">BNCC</span><span class="pill">Mão na massa</span><span class="pill">Aprendizagem ativa</span><span class="pill">Museu escolar</span></div>
+        </div>
+      </div>
+
+      <!-- 3. AULAS DE CAMPO -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Aulas de campo bimestrais
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <p>Expedições pedagógicas a museus, cinema, Corpo de Bombeiros, cais, horto, praças da cidade e locais históricos — para conectar currículo à vida real.</p>
+          <div><span class="pill">Cultura local</span><span class="pill">Cidadania</span><span class="pill">Experiência</span></div>
+        </div>
+      </div>
+
+      <!-- 4. FAMÍLIA & ESCOLA -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Projeto Família &amp; Escola
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <p>Convidamos familiares para compartilhar profissões e vivências com as turmas. Já recebemos padeiros (oficina de pão), policiais, profissionais da saúde e muito mais.</p>
+          <div><span class="pill">Comunidade</span><span class="pill">Propósito</span><span class="pill">Oficinas práticas</span></div>
+        </div>
+      </div>
+
+      <!-- 5. ESTRUTURA -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Estrutura esportiva e artística
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <div class="grid-cols">
+            <div>
+              <h3>Água</h3>
+              <ul>
+                <li>3 piscinas no campus (várias profundidades)</li>
+                <li>+ 1 piscina semiolímpica no Centro Poliesportivo</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Esporte &amp; Arte</h3>
+              <ul>
+                <li>Quadra poliesportiva coberta</li>
+                <li>Salão de dança</li>
+                <li>Teatro em luz negra (apresentações)</li>
+                <li>CEIPC é Patrocinador Oficial do Rondon Cube — campeonato de cubo mágico regulamentado pela World Cube Association.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-cols" style="margin-top:1rem">
+            <div>
+              <h3>Ambientes &amp; Conforto</h3>
+              <ul>
+                <li>Auditório grande, inclinado (teatro, cinema e palestras)</li>
+                <li>Climatização completa: ar condicionado em todas as salas e ambientes</li>
+                <li>Muitas plantas e samambaias, criando um ambiente acolhedor</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Maternal</h3>
+              <ul>
+                <li>Camas para descanso das crianças do período integral (manhã e/ou tarde)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. PARQUE INFANTIL -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Parque Infantil (Jd. I, Jd. II e Pré)
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
           <ul>
-            <li>Quadra poliesportiva coberta</li>
-            <li>Salão de dança</li>
-            <li>Teatro em luz negra (apresentações)</li>
-            <li>CEIPC é Patrocinador Oficial do Rondon Cube — campeonato de cubo mágico regulamentado pela World Cube Association.</li>
+            <li>Piscina de bolinhas, cama elástica, escorregador, pista de obstáculos</li>
+            <li>Ambiente lúdico e seguro para o desenvolvimento motor</li>
           </ul>
         </div>
       </div>
-      <div class="grid-cols" style="margin-top:1rem">
-        <div>
-          <h3>Ambientes &amp; Conforto</h3>
+
+      <!-- 7. LAB / BIB / CASA / REFEITÓRIO -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Laboratório, Biblioteca, Casa na Árvore e Refeitório
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
           <ul>
-            <li>Auditório grande, inclinado (teatro, cinema e palestras)</li>
-            <li>Climatização completa: ar condicionado em todas as salas e ambientes</li>
-            <li>Muitas plantas e samambaias, criando um ambiente acolhedor</li>
+            <li>Laboratório de Ciências equipado</li>
+            <li>Biblioteca com acervo infantil e infantojuvenil</li>
+            <li>Casa na árvore (convivência e imaginação)</li>
+            <li>Refeitório amplo e acolhedor</li>
+            <li>Museu da Escola: projetos artísticos autorais dos alunos expostos permanentemente</li>
           </ul>
         </div>
-        <div>
-          <h3>Maternal</h3>
+      </div>
+
+      <!-- 8. EVENTOS -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Eventos inesquecíveis
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
           <ul>
-            <li>Camas para descanso das crianças do período integral (manhã e/ou tarde)</li>
+            <li>Festa do Dia das Mães com jantar especial</li>
+            <li>Gincana do Dia dos Pais</li>
+            <li>Noite do Pijama: gincanas, cinema, brinquedos e show de mágica</li>
+            <li>Feira Científica e Cultural</li>
+            <li>Mostras artísticas e apresentações temáticas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 9. TRANSPARÊNCIA -->
+      <div class="acc-item">
+        <button class="acc-btn" aria-expanded="false">
+          Transparência pedagógica para as famílias
+          <span class="chev">▾</span>
+        </button>
+        <div class="acc-content">
+          <ul>
+            <li>Plano de aula semanal disponível online para os pais</li>
+            <li>Vídeos semanais dos projetos e atividades enviados todas as sextas-feiras</li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- 6. PARQUE INFANTIL -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Parque Infantil (Jd. I, Jd. II e Pré)
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <ul>
-        <li>Piscina de bolinhas, cama elástica, escorregador, pista de obstáculos</li>
-        <li>Ambiente lúdico e seguro para o desenvolvimento motor</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 7. LAB / BIB / CASA / REFEITÓRIO -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Laboratório, Biblioteca, Casa na Árvore e Refeitório
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <ul>
-        <li>Laboratório de Ciências equipado</li>
-        <li>Biblioteca com acervo infantil e infantojuvenil</li>
-        <li>Casa na árvore (convivência e imaginação)</li>
-        <li>Refeitório amplo e acolhedor</li>
-        <li>Museu da Escola: projetos artísticos autorais dos alunos expostos permanentemente</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 8. EVENTOS -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Eventos inesquecíveis
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <ul>
-        <li>Festa do Dia das Mães com jantar especial</li>
-        <li>Gincana do Dia dos Pais</li>
-        <li>Noite do Pijama: gincanas, cinema, brinquedos e show de mágica</li>
-        <li>Feira Científica e Cultural</li>
-        <li>Mostras artísticas e apresentações temáticas</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 9. TRANSPARÊNCIA -->
-  <div class="acc-item">
-    <button class="acc-btn" aria-expanded="false">
-      Transparência pedagógica para as famílias
-      <span class="chev">▾</span>
-    </button>
-    <div class="acc-content">
-      <ul>
-        <li>Plano de aula semanal disponível online para os pais</li>
-        <li>Vídeos semanais dos projetos e atividades enviados todas as sextas-feiras</li>
-      </ul>
-    </div>
-  </div>
-</div>
   </section>
 
   <!-- CTA + Instagram -->
@@ -381,49 +383,49 @@
 
   <!-- Galeria placeholder -->
   <section class="cards" style="margin-top:1rem">
-  <div class="card gallery">
-    <h2>Galeria CEIPC</h2>
+    <div class="card gallery">
+      <h2>Galeria CEIPC</h2>
 
-    <!-- grade responsiva -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px">
-      <a href="img/1.jpg" target="_blank" style="display:block">
-        <img src="img/1.jpg" alt="Brincadeiras no parque interno do CEIPC"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
+      <!-- grade responsiva -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px">
+        <a href="img/1.jpg" target="_blank" style="display:block">
+          <img src="img/1.jpg" alt="Brincadeiras no parque interno do CEIPC"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
 
-      <a href="img/3.jpg" target="_blank" style="display:block">
-        <img src="img/3.jpg" alt="Vivências transformadoras em sala de aula"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
+        <a href="img/3.jpg" target="_blank" style="display:block">
+          <img src="img/3.jpg" alt="Vivências transformadoras em sala de aula"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
 
-      <a href="img/4.jpg" target="_blank" style="display:block">
-        <img src="img/4.jpg" alt="Atividades esportivas no CEIPC"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
+        <a href="img/4.jpg" target="_blank" style="display:block">
+          <img src="img/4.jpg" alt="Atividades esportivas no CEIPC"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
 
-      <a href="img/5.jpg" target="_blank" style="display:block">
-        <img src="img/5.jpg" alt="Experimentos e ciências desde cedo"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
+        <a href="img/5.jpg" target="_blank" style="display:block">
+          <img src="img/5.jpg" alt="Experimentos e ciências desde cedo"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
 
-      <a href="img/7.jpg" target="_blank" style="display:block">
-        <img src="img/7.jpg" alt="Conheça o CEIPC: visita guiada"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
-      
-      <a href="img/6.jpg" target="_blank" style="display:block">
-        <img src="img/6.jpg" alt="Conheça o CEIPC: visita guiada"
-             loading="lazy"
-             style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
-      </a>
+        <a href="img/7.jpg" target="_blank" style="display:block">
+          <img src="img/7.jpg" alt="Conheça o CEIPC: visita guiada"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
+
+        <a href="img/6.jpg" target="_blank" style="display:block">
+          <img src="img/6.jpg" alt="Conheça o CEIPC: visita guiada"
+               loading="lazy"
+               style="width:100%;display:block;border-radius:12px;aspect-ratio:1/1;object-fit:cover">
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer>
     <p>&copy; CEIPC &middot; Parceria Unimed Rondonópolis / Hospital Mário Perrone</p>
